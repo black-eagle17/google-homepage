@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+section {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+nav,
+footer {
+  flex-shrink: 0;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 60px;
+  padding: 6px;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 10px;
+}
+
+.nav-items1 ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px;
+}
+
+.nav-items2 ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#container {
+  width: 80%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#search {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid gray;
+  color: rgba(0, 0, 0, 0.87);
+  padding: 5px 8px 0 14px;
+  border-radius: 25px;
+  margin-top: 40px;
+}
+
+#search input {
+  width: 487px;
+  height: 34px;
+  border: none;
+  background: transparent;
+}
+#search input:focus {
+  border: none;
+  outline: none;
+}
+
+.footer-layer-container {
+  background: #f2f2f2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-side-titles {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.left-side-titles div {
+  margin: 10px;
+  color: black;
+  font-size: 0.9em;
+}
+
+.middle-titles {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.middle-titles span {
+  color: green;
+}
+
+.right-side-titles {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.right-side-titles div {
+  margin: 10px;
+  color: black;
+  font-size: 0.9em;
+}
+
+@media (max-width: 1200px) {
+  .footer-layer-container {
+    flex-wrap: wrap;
+  }
+  .middle-titles {
+    justify-content: center;
+    text-align: center;
+    flex-basis: 100%;
+    order: 1;
+  }
+  .left-side-titles {
+    text-align: center;
+    order: 2;
+  }
+  .right-side-titles {
+    text-align: center;
+    order: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .middle-titles {
+    text-align: center;
+    flex-basis: 100%;
+    order: 1;
+  }
+  .left-side-titles {
+    flex-basis: 100%;
+    order: 2;
+  }
+  .right-side-titles {
+    flex-basis: 100%;
+    order: 3;
+  }
+}
